@@ -1,4 +1,4 @@
-{
+{ "homepage":"https://kkchowdhury.github.io/Task-Manager",
   "name": "mern-task-manager",
   "version": "1.0.0",
   "description": "A MERN application for basic tasks management",
@@ -11,6 +11,8 @@
     "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
     "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
     "start": "cd backend && node app.js"
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
   },
   "keywords": ["MERN", "Tasks","Task manager", "Full stack application"],
   "author": "Aayush",
